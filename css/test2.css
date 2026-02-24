@@ -1,16 +1,30 @@
-.box {
-  display: inline-block;
+* {
   box-sizing: border-box;
-  width: 100px;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+}
+
+.item {
+  flex-basis: 100px;
   height: 100px;
   background-color: burlywood;
   padding: 10px;
-  border: 5px solid darkred;
+  border: 6px solid darkred;
   margin: 10px;
-
-  /* padding: 16px 42px; */
 }
 
-.box:nth-child(even) {
-  background-color: gold;
+.item:nth-child(2) {
+  order: 4;
+  flex-basis: 50px;
+  height: 50px;
+  align-self: flex-end;
+}
+.item:nth-child(3) {
+  order: 1;
+  flex-basis: 80px;
+  height: 80px;
+  align-self: flex-end;
 }
